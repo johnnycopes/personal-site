@@ -1,0 +1,17 @@
+$blue: #2b2d42;
+$red: #ef233c;
+$light-gray: #edf2f4;
+$white: #fff;
+
+@font-face {
+  font-family: 'Fenwick Olden';
+  src: url('../assets/fenwick_olden.otf');
+}
+
+@font-face {
+  font-family: 'Byington Regular';
+  src: url('../assets/byington_rg.otf');
+}
+
+$display-font: 'Fenwick Olden';
+$body-copy: 'Byington Regular';

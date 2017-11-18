@@ -1,0 +1,122 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Fenwick Olden';
+  src: url("../assets/fenwick_olden.otf"); }
+@font-face {
+  font-family: 'Byington Regular';
+  src: url("../assets/byington_rg.otf"); }
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px; }
+
+body {
+  line-height: 1.5;
+  font-size: 2rem;
+  font-family: "Byington Regular";
+  color: #2b2d42;
+  display: grid;
+  grid-template-columns: 15% repeat(6, 1fr) 15%;
+  grid-auto-rows: minmax(100vh, auto);
+  align-items: center; }
+
+.job-title {
+  align-self: flex-start; }
+
+.name {
+  line-height: 1;
+  font-size: 15rem;
+  font-family: "Fenwick Olden";
+  transform: rotate(-7deg);
+  margin-bottom: 7.5rem;
+  text-align: center;
+  grid-column: 2 / 8;
+  grid-row: 1; }
+
+.header {
+  grid-column: 1;
+  font-size: 10rem;
+  writing-mode: sideways-lr;
+  color: #fff;
+  font-family: "Fenwick Olden";
+  justify-self: center; }
+
+.section {
+  grid-column: 3 / 7; }
+
+.bg {
+  grid-column: 1 / 9;
+  background: #2b2d42;
+  align-self: stretch;
+  z-index: -1; }
+
+.about {
+  grid-row: 2;
+  color: #fff; }
+  .about-header {
+    grid-row: 2; }
+  .about-bg {
+    grid-row: 2; }
+
+.experience {
+  grid-row: 3; }
+  .experience-header {
+    grid-row: 3;
+    color: #2b2d42; }
+
+.contact {
+  grid-row: 4;
+  color: #fff; }
+  .contact-header {
+    grid-row: 4; }
+  .contact-bg {
+    grid-row: 4; }
+
+/*# sourceMappingURL=styles.css.map */
