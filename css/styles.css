@@ -48,10 +48,7 @@ table {
 
 @font-face {
   font-family: 'Fenwick Olden';
-  src: url("../assets/fenwick_olden.otf"); }
-@font-face {
-  font-family: 'Byington Regular';
-  src: url("../assets/byington_rg.otf"); }
+  src: url("../assets/fonts/fenwick_olden.otf"); }
 * {
   box-sizing: border-box; }
 
@@ -64,28 +61,26 @@ body {
   font-family: "Maven Pro";
   color: #2b2d42;
   display: grid;
-  grid-template-columns: [full-start] minmax(1em, 15%) 1fr [main-start] repeat(4, 1fr) [main-end] 1fr 15% [full-end];
+  grid-template-columns: [full-start] minmax(1em, 15%) [container-start] 1fr [main-start] repeat(4, 1fr) [main-end] 1fr [container-end] 15% [full-end];
   grid-auto-rows: minmax(100vh, auto);
   align-items: center; }
 
-a {
-  color: #fff; }
-  a:hover .fa {
-    transform: scale(1.1); }
+h2 {
+  font-size: 2.5rem; }
 
-.fa {
-  transition: 100ms all ease-in-out; }
+h3 {
+  font-size: 2.25rem; }
 
 p {
   margin-bottom: 2rem; }
 
 .name {
-  grid-column: 2 / 8;
+  grid-column: container;
   grid-row: 1;
   line-height: 1;
   font-size: 15rem;
   font-family: "Fenwick Olden";
-  transform: rotate(-7deg);
+  transform: rotate(-9deg);
   margin-bottom: 7.5rem;
   text-align: center; }
 
@@ -117,8 +112,86 @@ p {
 .experience {
   margin: 20rem 0;
   grid-row: 3; }
+  .experience h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: #8d99ae;
+    margin-bottom: 2rem; }
   .experience-header {
     grid-row: 3; }
+
+.card {
+  margin-bottom: 5rem;
+  position: relative; }
+  .card .date {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .card .company-img {
+    max-width: 150px;
+    position: absolute;
+    top: 50px;
+    right: 0; }
+  .card.insiten::after {
+    content: "";
+    background-image: url(../assets/img/insiten.png);
+    position: absolute;
+    top: 0;
+    left: -150px;
+    background-size: 120px;
+    width: 150px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0; }
+  .card.jwt::after {
+    content: "";
+    background-image: url(../assets/img/jwt.png);
+    position: absolute;
+    top: 0;
+    left: -150px;
+    background-size: 120px;
+    width: 150px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0; }
+  .card.doable::after {
+    content: "";
+    background-image: url(../assets/img/doable.png);
+    position: absolute;
+    top: 0;
+    left: -150px;
+    background-size: 120px;
+    width: 150px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0; }
+  .card.wunderman::after {
+    content: "";
+    background-image: url(../assets/img/wunderman.svg);
+    position: absolute;
+    top: 0;
+    left: -150px;
+    background-size: 120px;
+    width: 150px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0; }
+  .card.digitalcrafts::after {
+    content: "";
+    background-image: url(../assets/img/digitalcrafts.png);
+    position: absolute;
+    top: 0;
+    left: -150px;
+    background-size: 120px;
+    width: 150px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0; }
 
 .contact {
   position: fixed;
@@ -153,5 +226,11 @@ p {
       transform-origin: bottom right;
       z-index: -1;
       opacity: 0.7; }
+  .contact-link {
+    color: #fff; }
+    .contact-link:hover .fa {
+      transform: scale(1.1); }
+  .contact-icon {
+    transition: 100ms all ease-in-out; }
 
 /*# sourceMappingURL=styles.css.map */

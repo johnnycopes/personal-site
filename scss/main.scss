@@ -1,5 +1,6 @@
 @import 'reset';
 @import 'variables';
+@import 'mixins';
 
 * {
 	box-sizing: border-box;
@@ -15,21 +16,17 @@ body {
 	font-family: $body-copy;
 	color: $blue;
 	display: grid;
-	grid-template-columns: [full-start] minmax(1em, 15%) 1fr [main-start] repeat(4, 1fr) [main-end] 1fr 15% [full-end];
+	grid-template-columns: [full-start] minmax(1em, 15%) [container-start] 1fr [main-start] repeat(4, 1fr) [main-end] 1fr [container-end] 15% [full-end];
 	grid-auto-rows: minmax(100vh, auto);
 	align-items: center;
 }
 
-a {
-	color: $white;
-
-	&:hover .fa {
-		transform: scale(1.1);
-	}
+h2 {
+	font-size: 2.5rem;
 }
 
-.fa {
-	transition: 100ms all ease-in-out;
+h3 {
+	font-size: 2.25rem;
 }
 
 p {
@@ -37,12 +34,12 @@ p {
 }
 
 .name {
-	grid-column: 2 / 8;
+	grid-column: container;
 	grid-row: 1;
 	line-height: 1;
 	font-size: 15rem;
 	font-family: $display-font;
-	transform: rotate(-7deg);
+	transform: rotate(-9deg);
 	margin-bottom: 7.5rem;
 	text-align: center;
 }
@@ -81,6 +78,13 @@ p {
 }
 
 .experience {
+
+	h1 {
+		text-align: center;
+		font-size: 4rem;
+		color: $dark-gray;
+		margin-bottom: 2rem;
+	}
 	margin: 20rem 0;
 	grid-row: 3;
 	
@@ -88,6 +92,39 @@ p {
 		grid-row: 3;
 	}
 }
+
+
+
+.card {
+	margin-bottom: 5rem;
+	position: relative;
+
+	.date {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.company-img {
+		max-width: 150px;
+		position: absolute;
+		top: 50px;
+		right: 0;
+	}
+
+	&.insiten 		  { @include img('insiten.png'); }
+	&.jwt			      { @include img('jwt.png') }
+	&.doable 			  { @include img('doable.png') }
+	&.wunderman 		{ @include img('wunderman.svg') }
+	&.digitalcrafts { @include img('digitalcrafts.png') }
+}
+
+
+
+// .card:hover::after {
+// 	transform: translateX(0);
+// 	background-color: blue;
+// }
 
 .contact {
 	position: fixed;
@@ -125,5 +162,17 @@ p {
 			z-index: -1;
 			opacity: 0.7;
 		}
+	}
+
+	&-link {
+		color: $white;
+		
+		&:hover .fa {
+			transform: scale(1.1);
+		}
+	}
+
+	&-icon {
+		transition: 100ms all ease-in-out;
 	}
 }
