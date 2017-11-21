@@ -108,6 +108,10 @@ p {
     color: #fff; }
   .about-bg {
     grid-row: 2; }
+  .about a,
+  .about a:active,
+  .about a:visited {
+    color: #fff; }
 
 .experience {
   grid-row: 3;
@@ -125,7 +129,7 @@ p {
     grid-template-columns: auto auto;
     grid-template-rows: 50% 50%;
     align-items: end;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     position: relative;
     height: 70px; }
     .experience .card:last-child {
@@ -133,7 +137,7 @@ p {
     .experience .card .title {
       grid-row: 1;
       grid-column: 1; }
-    .experience .card .company {
+    .experience .card .organization {
       grid-row: 2;
       grid-column: 1; }
     .experience .card .date {
@@ -144,6 +148,10 @@ p {
       grid-row: 2;
       grid-column: 2;
       justify-self: end; }
+    .experience .card a,
+    .experience .card a:active,
+    .experience .card a:visited {
+      color: #2b2d42; }
 
 .contact {
   position: fixed;
