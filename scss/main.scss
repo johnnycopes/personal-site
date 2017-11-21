@@ -79,7 +79,7 @@ p {
 
 .experience {
 	grid-row: 3;
-	margin: 20rem 0;
+	margin: 10rem 0;
 
 	&-header {
 		grid-row: 3;
@@ -112,8 +112,8 @@ p {
 		position: relative;
 		height: 70px;
 
-		&-list {
-			margin-bottom: 2rem;
+		&:last-child {
+			margin-bottom: 6rem;
 		}
 
 		.title {

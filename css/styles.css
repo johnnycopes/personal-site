@@ -111,7 +111,7 @@ p {
 
 .experience {
   grid-row: 3;
-  margin: 20rem 0; }
+  margin: 10rem 0; }
   .experience-header {
     grid-row: 3; }
   .experience .category {
@@ -128,8 +128,8 @@ p {
     margin-bottom: 4rem;
     position: relative;
     height: 70px; }
-    .experience .card-list {
-      margin-bottom: 2rem; }
+    .experience .card:last-child {
+      margin-bottom: 6rem; }
     .experience .card .title {
       grid-row: 1;
       grid-column: 1; }
