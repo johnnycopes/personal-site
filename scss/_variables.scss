@@ -1,7 +1,11 @@
 $blue: #2b2d42;
 $red: #ef233c;
+$dark-red: #d90429;
+$dark-gray: #8d99ae;
 $light-gray: #edf2f4;
 $white: #fff;
+
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
 
 @font-face {
   font-family: 'Fenwick Olden';
@@ -13,5 +17,7 @@ $white: #fff;
   src: url('../assets/byington_rg.otf');
 }
 
+
+
 $display-font: 'Fenwick Olden';
-$body-copy: 'Byington Regular';
+$body-copy: 'Maven Pro';

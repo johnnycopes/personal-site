@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -60,39 +61,46 @@ html {
 body {
   line-height: 1.5;
   font-size: 2rem;
-  font-family: "Byington Regular";
+  font-family: "Maven Pro";
   color: #2b2d42;
   display: grid;
-  grid-template-columns: 15% repeat(6, 1fr) 15%;
+  grid-template-columns: [full-start] minmax(1em, 15%) 1fr [main-start] repeat(4, 1fr) [main-end] 1fr 15% [full-end];
   grid-auto-rows: minmax(100vh, auto);
   align-items: center; }
 
-.job-title {
-  align-self: flex-start; }
+a {
+  color: #fff; }
+  a:hover .fa {
+    transform: scale(1.1); }
+
+.fa {
+  transition: 100ms all ease-in-out; }
+
+p {
+  margin-bottom: 2rem; }
 
 .name {
+  grid-column: 2 / 8;
+  grid-row: 1;
   line-height: 1;
   font-size: 15rem;
   font-family: "Fenwick Olden";
   transform: rotate(-7deg);
   margin-bottom: 7.5rem;
-  text-align: center;
-  grid-column: 2 / 8;
-  grid-row: 1; }
+  text-align: center; }
 
 .header {
   grid-column: 1;
   font-size: 10rem;
   writing-mode: sideways-lr;
-  color: #fff;
   font-family: "Fenwick Olden";
   justify-self: center; }
 
 .section {
-  grid-column: 3 / 7; }
+  grid-column: main; }
 
 .bg {
-  grid-column: 1 / 9;
+  grid-column: full;
   background: #2b2d42;
   align-self: stretch;
   z-index: -1; }
@@ -101,22 +109,49 @@ body {
   grid-row: 2;
   color: #fff; }
   .about-header {
-    grid-row: 2; }
+    grid-row: 2;
+    color: #fff; }
   .about-bg {
     grid-row: 2; }
 
 .experience {
+  margin: 20rem 0;
   grid-row: 3; }
   .experience-header {
-    grid-row: 3;
-    color: #2b2d42; }
+    grid-row: 3; }
 
 .contact {
-  grid-row: 4;
-  color: #fff; }
-  .contact-header {
-    grid-row: 4; }
-  .contact-bg {
-    grid-row: 4; }
+  position: fixed;
+  width: 215px;
+  height: 215px;
+  font-size: 3rem;
+  bottom: 0;
+  right: 0;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  z-index: 1; }
+  .contact-list {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 50px 50px;
+    justify-items: center;
+    align-items: center;
+    background-clip: text;
+    color: #fff; }
+    .contact-list::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 40px;
+      position: absolute;
+      background: #d90429;
+      transform: skewX(-40deg);
+      transform-origin: bottom right;
+      z-index: -1;
+      opacity: 0.7; }
 
 /*# sourceMappingURL=styles.css.map */
