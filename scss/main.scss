@@ -1,6 +1,6 @@
 @import 'reset';
 @import 'variables';
-@import 'mixins';
+@import 'animations';
 
 
 // =================
@@ -21,14 +21,14 @@ html {
 }
 
 body {
-	line-height: 2;
-	font-size: 2rem;
-	font-family: $body-copy;
-	color: $blue;
 	display: grid;
 	grid-template-columns: [full-start] 1em [container-start] 1fr [main-start] repeat(4, 1fr) [main-end] 1fr [container-end] 1em [full-end];
 	grid-auto-rows: minmax(100vh, auto);
 	align-items: center;
+	line-height: 2;
+	font-size: 2rem;
+	font-family: $body-copy;
+	color: $blue;
 }
 
 h2, h3, p {
@@ -74,6 +74,7 @@ p {
 	transform: rotate(-9deg);
 	margin-bottom: 7.5rem;
 	text-align: center;
+	animation: name-fadein 600ms;
 }
 
 .about {
@@ -161,6 +162,8 @@ p {
 	bottom: 0;
 	left: 0;
 	z-index: 1;
+	transform: translateX(100%);
+	animation: menu-fadein 400ms 700ms forwards;
 
 	&-list {
 		display: flex;

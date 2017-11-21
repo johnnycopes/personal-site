@@ -49,6 +49,18 @@ table {
 @font-face {
   font-family: 'Fenwick Olden';
   src: url("../assets/fonts/fenwick_olden.otf"); }
+@keyframes name-fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(-300px); }
+  100% {
+    opacity: 1;
+    transform: rotate(-9px) translateY(0); } }
+@keyframes menu-fadein {
+  0% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(0); } }
 :selection {
   color: #fff;
   background: #d90429; }
@@ -60,14 +72,14 @@ html {
   font-size: 7.5px; }
 
 body {
-  line-height: 2;
-  font-size: 2rem;
-  font-family: "Maven Pro";
-  color: #2b2d42;
   display: grid;
   grid-template-columns: [full-start] 1em [container-start] 1fr [main-start] repeat(4, 1fr) [main-end] 1fr [container-end] 1em [full-end];
   grid-auto-rows: minmax(100vh, auto);
-  align-items: center; }
+  align-items: center;
+  line-height: 2;
+  font-size: 2rem;
+  font-family: "Maven Pro";
+  color: #2b2d42; }
 
 h2, h3, p {
   font-size: 1.5rem; }
@@ -101,7 +113,8 @@ p {
   font-family: "Fenwick Olden";
   transform: rotate(-9deg);
   margin-bottom: 7.5rem;
-  text-align: center; }
+  text-align: center;
+  animation: name-fadein 600ms; }
 
 .about {
   grid-row: 2;
@@ -161,7 +174,9 @@ p {
   width: 100%;
   bottom: 0;
   left: 0;
-  z-index: 1; }
+  z-index: 1;
+  transform: translateX(100%);
+  animation: menu-fadein 400ms 700ms forwards; }
   .contact-list {
     display: flex;
     justify-content: space-around;
