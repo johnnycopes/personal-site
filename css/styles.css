@@ -69,7 +69,7 @@ h2 {
   font-size: 2.5rem; }
 
 h3 {
-  font-size: 2.25rem; }
+  font-size: 2rem; }
 
 p {
   margin-bottom: 2rem; }
@@ -110,88 +110,40 @@ p {
     grid-row: 2; }
 
 .experience {
-  margin: 20rem 0;
-  grid-row: 3; }
-  .experience h1 {
-    text-align: center;
-    font-size: 4rem;
-    color: #8d99ae;
-    margin-bottom: 2rem; }
+  grid-row: 3;
+  margin: 20rem 0; }
   .experience-header {
     grid-row: 3; }
-
-.card {
-  margin-bottom: 5rem;
-  position: relative; }
-  .card .date {
-    position: absolute;
-    top: 0;
-    right: 0; }
-  .card .company-img {
-    max-width: 150px;
-    position: absolute;
-    top: 50px;
-    right: 0; }
-  .card.insiten::after {
-    content: "";
-    background-image: url(../assets/img/insiten.png);
-    position: absolute;
-    top: 0;
-    left: -150px;
-    background-size: 120px;
-    width: 150px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0; }
-  .card.jwt::after {
-    content: "";
-    background-image: url(../assets/img/jwt.png);
-    position: absolute;
-    top: 0;
-    left: -150px;
-    background-size: 120px;
-    width: 150px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0; }
-  .card.doable::after {
-    content: "";
-    background-image: url(../assets/img/doable.png);
-    position: absolute;
-    top: 0;
-    left: -150px;
-    background-size: 120px;
-    width: 150px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0; }
-  .card.wunderman::after {
-    content: "";
-    background-image: url(../assets/img/wunderman.svg);
-    position: absolute;
-    top: 0;
-    left: -150px;
-    background-size: 120px;
-    width: 150px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0; }
-  .card.digitalcrafts::after {
-    content: "";
-    background-image: url(../assets/img/digitalcrafts.png);
-    position: absolute;
-    top: 0;
-    left: -150px;
-    background-size: 120px;
-    width: 150px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0; }
+  .experience .category {
+    text-align: center;
+    font-size: 3rem;
+    color: #8d99ae;
+    margin-bottom: 2rem;
+    position: relative; }
+  .experience .card {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 50% 50%;
+    align-items: end;
+    margin-bottom: 4rem;
+    position: relative;
+    height: 70px; }
+    .experience .card-list {
+      margin-bottom: 2rem; }
+    .experience .card .title {
+      grid-row: 1;
+      grid-column: 1; }
+    .experience .card .company {
+      grid-row: 2;
+      grid-column: 1; }
+    .experience .card .date {
+      grid-row: 1;
+      grid-column: 2;
+      justify-self: end; }
+    .experience .card .location {
+      grid-row: 2;
+      grid-column: 2;
+      justify-self: end; }
 
 .contact {
   position: fixed;
