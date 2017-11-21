@@ -2,6 +2,16 @@
 @import 'variables';
 @import 'mixins';
 
+
+// =================
+// GLOBAL
+// =================
+
+:selection {
+	color: $white;
+	background: $dark-red;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -29,16 +39,10 @@ p {
 	margin-bottom: 2rem;
 }
 
-.name {
-	grid-column: container;
-	grid-row: 1;
-	line-height: 1;
-	font-size: 7rem;
-	font-family: $display-font;
-	transform: rotate(-9deg);
-	margin-bottom: 7.5rem;
-	text-align: center;
-}
+
+// =================
+// SPECIFIC
+// =================
 
 .header {
 	grid-column: container;
@@ -59,6 +63,17 @@ p {
 	background: $blue;
 	align-self: stretch;
 	z-index: -1;
+}
+
+.name {
+	grid-column: container;
+	grid-row: 1;
+	line-height: 1;
+	font-size: 7rem;
+	font-family: $display-font;
+	transform: rotate(-9deg);
+	margin-bottom: 7.5rem;
+	text-align: center;
 }
 
 .about {
@@ -179,8 +194,9 @@ p {
 }
 
 
-
-
+// =================
+// MEDIA QUERIES
+// =================
 
 @media screen and (min-width: 360px) {
 
@@ -191,6 +207,7 @@ p {
 	h3, p {
 		font-size: 1.75rem;
 	}
+
 }
 
 
@@ -200,11 +217,8 @@ p {
 		font-size: 8px;
 	}
 
-	body {
-		min-height: 600px;
-	}
-
 }
+
 
 @media screen and (min-width: 768px) {
 
@@ -269,6 +283,7 @@ p {
 	}
 }
 
+
 @media screen and (min-width: 1100px) {
 	
 	html {
@@ -276,11 +291,11 @@ p {
 	}
 
 	body {
-		line-height: 1.5;
 		grid-template-columns: [full-start] minmax(1em, 15%) [container-start] 1fr [main-start] repeat(4, 1fr) [main-end] 1fr [container-end] 15% [full-end];
 	}
 
 }
+
 
 @media screen and (min-width: 1400px) {
 	
