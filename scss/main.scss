@@ -274,14 +274,11 @@ p {
 	.header {
 		grid-column: 1;
 		font-size: 10rem;
-		-webkit-writing-mode: sideways-lr;
-		    -ms-writing-mode: sideways-lr;
-		        writing-mode: sideways-lr;
 		-ms-flex-item-align: center;
 		    align-self: center;
-		-webkit-transform: rotate(0);
-		    -ms-transform: rotate(0);
-		        transform: rotate(0);
+		-webkit-transform: rotate(-90deg);
+		    -ms-transform: rotate(-90deg);
+		        transform: rotate(-90deg);
 	}
 
 	.section {
