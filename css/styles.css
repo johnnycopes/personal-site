@@ -147,8 +147,8 @@ p {
   transform: rotate(-9deg);
   margin-bottom: 7.5rem;
   text-align: center;
-  -webkit-animation: name-fadein 600ms;
-  animation: name-fadein 600ms; }
+  -webkit-animation: name-fadein 800ms;
+  animation: name-fadein 800ms; }
 
 .about {
   grid-row: 2;
@@ -185,7 +185,7 @@ p {
     position: relative;
     height: 7rem; }
     .experience .card:last-child {
-      margin-bottom: 6rem; }
+      margin-bottom: 7rem; }
     .experience .card .title {
       grid-row: 1;
       grid-column: 1; }
@@ -214,8 +214,8 @@ p {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
-  -webkit-animation: menu-fadein 400ms 700ms forwards;
-  animation: menu-fadein 400ms 700ms forwards; }
+  -webkit-animation: menu-fadein 400ms 900ms forwards;
+  animation: menu-fadein 400ms 900ms forwards; }
   .contact-list {
     display: -webkit-box;
     display: -ms-flexbox;

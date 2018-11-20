@@ -88,8 +88,8 @@ p {
 	        transform: rotate(-9deg);
 	margin-bottom: 7.5rem;
 	text-align: center;
-	-webkit-animation: name-fadein 600ms;
-	        animation: name-fadein 600ms;
+	-webkit-animation: name-fadein 800ms;
+	        animation: name-fadein 800ms;
 }
 
 .about {
@@ -140,7 +140,7 @@ p {
 		height: 7rem;
 
 		&:last-child {
-			margin-bottom: 6rem;
+			margin-bottom: 7rem;
 		}
 
 		.title {
@@ -182,8 +182,8 @@ p {
 	-webkit-transform: translateX(100%);
 	    -ms-transform: translateX(100%);
 	        transform: translateX(100%);
-	-webkit-animation: menu-fadein 400ms 700ms forwards;
-	        animation: menu-fadein 400ms 700ms forwards;
+	-webkit-animation: menu-fadein 400ms 900ms forwards;
+	        animation: menu-fadein 400ms 900ms forwards;
 
 	&-list {
 		display: -webkit-box;
