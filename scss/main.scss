@@ -273,7 +273,8 @@ p {
 	}
 
 	.header {
-		grid-column: 1;
+    grid-column: 1;
+    margin-top: 0;
 		font-size: 10rem;
 		-webkit-writing-mode: vertical-lr;
 		    -ms-writing-mode: vertical-lr;
