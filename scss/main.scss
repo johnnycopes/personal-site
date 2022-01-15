@@ -80,8 +80,11 @@ p {
 .name {
 	grid-column: container;
 	grid-row: 1;
+}
+
+.name-text {
 	line-height: 1;
-	font-size: 7rem;
+	font-size: 15rem;
 	font-family: $display-font;
 	-webkit-transform: rotate(-9deg);
 	    -ms-transform: rotate(-9deg);
