@@ -173,7 +173,7 @@ p {
 
 .name-text {
   line-height: 1;
-  font-size: 15rem;
+  font-size: 7rem;
   font-family: "Fenwick Olden";
   -webkit-transform: rotate(-9deg);
   -ms-transform: rotate(-9deg);
@@ -329,7 +329,7 @@ p {
     font-size: 2rem;
   }
 
-  .name {
+  .name-text {
     font-size: 15rem;
   }
 
