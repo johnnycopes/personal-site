@@ -3,19 +3,87 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro");
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -25,8 +93,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -34,16 +111,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -122,7 +203,10 @@ html {
 
 body {
   display: grid;
-  grid-template-columns: [full-start] 1em [container-start] 1fr [main-start] repeat(4, 1fr) [main-end] 1fr [container-end] 1em [full-end];
+  grid-template-columns: [full-start] 1em [container-start] 1fr [main-start] repeat(
+      4,
+      1fr
+    ) [main-end] 1fr [container-end] 1em [full-end];
   grid-auto-rows: minmax(100vh, auto);
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -133,7 +217,9 @@ body {
   color: #2b2d42;
 }
 
-h2, h3, p {
+h2,
+h3,
+p {
   font-size: 1.5rem;
 }
 
@@ -306,7 +392,8 @@ p {
     font-size: 2rem;
   }
 
-  h3, p {
+  h3,
+  p {
     font-size: 1.75rem;
   }
 }
@@ -318,14 +405,18 @@ p {
 @media screen and (min-width: 768px) {
   body {
     line-height: 1.5;
-    grid-template-columns: [full-start] minmax(1em, 10%) [container-start] 1fr [main-start] repeat(4, 1fr) [main-end] 1fr [container-end] 10% [full-end];
+    grid-template-columns: [full-start] minmax(1em, 10%) [container-start] 1fr [main-start] repeat(
+        4,
+        1fr
+      ) [main-end] 1fr [container-end] 10% [full-end];
   }
 
   h2 {
     font-size: 2.5rem;
   }
 
-  h3, p {
+  h3,
+  p {
     font-size: 2rem;
   }
 
@@ -401,7 +492,10 @@ p {
   }
 
   body {
-    grid-template-columns: [full-start] minmax(1em, 15%) [container-start] 1fr [main-start] repeat(4, 1fr) [main-end] 1fr [container-end] 15% [full-end];
+    grid-template-columns: [full-start] minmax(1em, 15%) [container-start] 1fr [main-start] repeat(
+        4,
+        1fr
+      ) [main-end] 1fr [container-end] 15% [full-end];
   }
 }
 @media screen and (min-width: 1400px) {
